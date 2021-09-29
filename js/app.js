@@ -4,7 +4,7 @@ window.addEventListener('load',function(){
     renderizadoNoticias(noticias);
     function renderizadoNoticias(listado){
         for(let i=0; i<listado.length; i++){
-            contNoticia.innerHTML += `<article>
+            contNoticia.innerHTML += `<article class=${listado[i].tipoNacional!=true? "internacional": ""}>
             <img src="${listado[i].imgUrl}" alt="Imagen noticia">
             <h2>
                 ${listado[i].titulo}
@@ -16,7 +16,8 @@ window.addEventListener('load',function(){
                 ${listado[i].fecha}
             </p>
             </article>`;
-            console.log(contNoticia);
+    
         }
     }
 })
+
