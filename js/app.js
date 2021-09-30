@@ -12,7 +12,7 @@ window.addEventListener('load',function(){
             <p>
                 ${listado[i].descripcion}
             </p>
-            <p>
+            <p class="fecha">
                 ${listado[i].fecha}
             </p>
             </article>`;

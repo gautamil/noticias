@@ -10,21 +10,47 @@
     --darker : #858585;
     --dark : #575555;
   }
-body{
+body {
     font-family: 'Roboto Mono', monospace;
+}
+h1 {
+    background-color: var(--darker);
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 2%;
 }
 .bloquesNoticias {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
 }
 article {
     background-color: var(--light);
+    color: var(--dark);
+    border-color: var(--dark);
+    max-width: 400px;
+    border-radius: 2.5%;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+img{
+    width: 100%;
+    border-radius: 2.5%;
+}
+.fecha{
+    font-weight: bold;
 }
 .internacional {
     background-color: var(--dark);
     color: black;
     border-color: black;
 }
-
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    margin-top: 2%;
+    padding: 0.7%;
+}
