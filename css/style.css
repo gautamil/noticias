@@ -5,16 +5,17 @@
     box-sizing: border-box;
 }
 :root {
-    --background : #ffffff;
-    --light : #b8b8b8;
-    --darker : #858585;
-    --dark : #575555;
+    --background : #c9c9c9;
+    --light : #8d8d8d;
+    --darker : #616161;
+    --dark : #414141;
   }
 body {
     font-family: 'Roboto Mono', monospace;
+    background-color: var(--background);
 }
 h1 {
-    background-color: var(--darker);
+    background-color: var(--light);
     color: var(--dark);
     text-align: center;
     margin-bottom: 2%;
